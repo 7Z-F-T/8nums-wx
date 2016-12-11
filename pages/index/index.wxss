@@ -1,0 +1,29 @@
+/**index.wxss**/
+
+#board {
+  background-color: lightgray;
+  margin: 0 auto;
+  padding: 0 10px 10px 0;
+}
+
+.num {
+  width: 180rpx;
+  height: 180rpx;
+  text-align: center;
+  margin: 10px 0 0 10px;
+  
+  display: inline-block;
+  font-size: 70px;
+  color: darkgoldenrod;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.num view {
+  background-color: lightblue;
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.invisible {
+  visibility: hidden;
+}

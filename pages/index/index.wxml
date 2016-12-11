@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view id="board" bindtouchstart="touchStart" bindtouchend="touchEnd">
+    <view id="row" wx:for="{{[0,1,2]}}" wx:for-item="row">
+      <view class="num" wx:for="{{[0,1,2]}}" wx:for-item="col">
+        <view wx:if="{{curArr[row * 3 + col] > 0}}">{{curArr[row * 3 + col]}}</view>
+        <view class="invisible" wx:else>{{curArr[row * 3 + col]}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view style="margin-top:20px;">
+    <button bindtap="random" size="mini">随机</button>
+    <button bindtap="autoRun" size="mini" style="margin-left: 20px;">自动分析</button>
+  </view>
+</view>
